@@ -1,0 +1,114 @@
+#BottomBar{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(0, 75, 70, 0) 0%, rgba(0, 0, 0, 0.514) 100%);
+    #GenderSelect{
+        width: 25px;
+        height: 100%;
+        align-items: center;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px 0;
+        .Gender{
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            gap: 0;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:nth-child(1){
+                svg{
+                    height: 20px;
+                }
+                &.active{
+                    svg{
+                        path:nth-child(1){
+                            stroke: #57bbea
+                        }
+                        path:nth-child(2){
+                            fill: #57bbea
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                svg{
+                    height: 25px;
+                }
+                &.active{
+                    svg{
+                        path:nth-child(1){
+                            stroke: #d6096a
+                        }
+                        path:nth-child(2){
+                            fill: #d6096a
+                        }
+                    }
+                }
+            }
+            svg{
+                path:nth-child(1){
+                    stroke: #000
+                }
+                path:nth-child(2){
+                    fill: #000
+                }
+            }
+        }
+    }
+    #barContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        padding-left: 10px;
+        background: rgba(53, 53, 53, 0.774);
+        gap: 10px;
+        &.M{
+            .Icons{
+                background-position-y: -56.8px;
+            }
+        }
+        &.F{
+            .Icons{
+                background-position-y: 0px;
+            }
+        }
+    }
+    
+    .Icons{
+        width: 54px;
+        height: 54px;
+        background: transparent url(/BottomBar.jpg) no-repeat;
+    }
+    
+    $n: 18;
+
+    @for $i from 0 through $n {
+        .Icons:nth-child(#{$i + 1}) {
+            background-position-x: (-$i * 56.8px) ;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    #BottomBar{
+      #barContainer{
+            transform: scale(0.8);
+        }
+    }
+  }

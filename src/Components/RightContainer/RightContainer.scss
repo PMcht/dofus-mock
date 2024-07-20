@@ -1,0 +1,35 @@
+#RightContainer{
+    min-height: 20vh;
+    height: auto;
+    width: 20vw;
+    align-self: flex-end;
+    margin-bottom: 15vh;
+    padding: 5px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, rgba(0, 75, 70, 0.466) 0%, rgba(0, 0, 0, 0.747) 100%);
+    h2{
+        color: #fff;
+        text-align: center;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+    }
+    #Spells{
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        row-gap: 15px;
+        flex-wrap:wrap;
+        column-gap: 5px;
+        margin-top: 5px;
+        .spellContainer{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-direction: column;
+        }
+        .spellIcon{
+            width: 28px;
+        }
+    }
+
+}

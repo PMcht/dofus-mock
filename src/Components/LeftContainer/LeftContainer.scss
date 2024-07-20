@@ -1,0 +1,108 @@
+#LeftContainer{
+    height: fit-content;
+    max-width: 500px;
+    min-width: 300px;
+    background: linear-gradient(-90deg, rgba(0, 75, 70, 0.521) 0%, rgba(0, 0, 0, 0.596) 100%);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .topDescription{
+        display: flex;
+        align-items: flex-end;
+        margin-top: -60px;
+        margin-left: -40px;
+        .classLogo{
+            height: 12rem;
+            
+        }
+        .titles{
+            margin-bottom: 30px;
+            margin-left: 10px;
+            h1{
+                color: #fff;
+                font-size: 3rem;
+                line-height: 3rem;;
+            }
+            h2{
+                color: #ffcb30;
+                font-size: 1.2rem;
+            }
+            .difficulty{
+                display: flex;
+                align-items: center;
+                p {
+                    color: grey;
+                    margin-right: 1rem;
+                }
+                .star{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    margin-top: -2px;
+                    margin-right: 5px;
+                    &.active{
+                        background: -webkit-linear-gradient(#02b9db, #01788e);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .description{
+        color: #e0e0e0;
+        font-size: .9rem;
+        margin-top: 5px;
+        margin-bottom: 14px;
+    }
+
+    .bar{
+        margin: 0 auto;
+        height: 1px;
+        width: 70%;
+        background: rgba(128, 128, 128, 0.212);
+    }
+
+    .caracteristiques{
+        margin-top: 15px;
+        position: relative;
+        display: flex;  
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        row-gap: 15px;
+        .carac{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .caracLogo{
+                background: url('/Caracteristiques.png') no-repeat;
+                background-size: 63px auto;
+                width: 110px;
+                height: 63px;
+            }
+            .caracText{
+                width: 100%;
+            }
+            .caracName{
+                color: #e0e0e0;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            .caracDesc{
+                color: #a3a3a3;
+                font-size: .9rem;
+            }
+        }
+    }
+
+}
+
+@media (max-height: 800px) {
+    #LeftContainer{
+        height: fit-content;
+        max-width: 600px;
+        min-width: 300px;
+    }
+  }

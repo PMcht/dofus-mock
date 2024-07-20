@@ -1,0 +1,27 @@
+#mainWrapper{
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% 10%;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  #choose{
+    position: absolute;
+    width: 100vw;
+    top: 5%;
+    h1{
+      color: #fff;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: 1px 1px 1px #000;
+    }
+  }
+}
+

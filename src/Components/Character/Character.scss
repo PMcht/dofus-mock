@@ -1,0 +1,41 @@
+.CharacterWrapper{
+    position: relative;
+    width: 300px;
+    height: 370px;
+    background: url('./Rock.png');
+    background-size:contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: visible;
+    align-self: flex-end;
+    margin-bottom: 5vh;
+    .Arrows{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      top: 35%;
+      color: #f1f1f1;
+      text-shadow: 1px 1px 1px #000;
+      text-decoration: none;
+      font-size: 5rem;
+      z-index:10;
+      opacity: .7;
+      &:nth-child(1){
+        right: 20%;
+        transform: rotate(130deg);
+      }
+      &:nth-child(3){
+        left: 20%;
+        transform: rotate(-130deg);
+      }
+    }
+    .Character {
+      position: absolute;
+      bottom: 185px;
+      width: 80%;
+      left: 10%;
+    }
+  }
