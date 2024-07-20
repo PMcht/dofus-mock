@@ -15,14 +15,6 @@ const BottomBar = ( {TriggerClassChange, setGender, gender} ) => {
 
     barContainer.className = gender
   }, [gender])
-
-  useEffect(() => {
-    const Icons = document.querySelectorAll('.Icons')
-
-    for (let i = 0; i < Icons.length; i++) {
-      Icons[i].addEventListener('click', () => { TriggerClassChange(Icons[i].dataset.classe)})
-    }
-  })
   
   return (
     <div id="BottomBar">
@@ -34,29 +26,29 @@ const BottomBar = ( {TriggerClassChange, setGender, gender} ) => {
                 <a href='#' className='Gender F' onClick={() => setGender('F')}><Female /></a>
             </div>
 
-            <a className='Icons' href="#" data-classe='Osamodas' />
-            <a className='Icons' href="#" data-classe='Enutrof' />
-            <a className='Icons' href="#" data-classe='Sram' />
-            <a className='Icons' href="#" data-classe='Xelor' />
+            <a className='Icons' href="#" data-classe='Osamodas' onClick={() => TriggerClassChange('Osamodas')} />
+            <a className='Icons' href="#" data-classe='Enutrof' onClick={() => TriggerClassChange('Enutrof')} />
+            <a className='Icons' href="#" data-classe='Sram' onClick={() => TriggerClassChange('Sram')} /> 
+            <a className='Icons' href="#" data-classe='Xelor' onClick={() => TriggerClassChange('Xelor')} /> 
 
-            <a className='Icons' href="#" data-classe='Ecaflip' />
-            <a className='Icons' href="#" data-classe='Eniripsa' />
-            <a className='Icons' href="#" data-classe='Iop'/>
-            <a className='Icons' href="#" data-classe='Cra'/>
+            <a className='Icons' href="#" data-classe='Ecaflip' onClick={() => TriggerClassChange('Ecaflip')} /> 
+            <a className='Icons' href="#" data-classe='Eniripsa' onClick={() => TriggerClassChange('Eniripsa')} /> 
+            <a className='Icons' href="#" data-classe='Iop' onClick={() => TriggerClassChange('Iop')} />
+            <a className='Icons' href="#" data-classe='Cra' onClick={() => TriggerClassChange('Cra')} /> 
 
-            <a className='Icons' href="#" data-classe='Sadida'/>
-            <a className='Icons' href="#" data-classe='Sacrieur'/>
-            <a className='Icons' href="#" data-classe='Pandawa'/>
-            <a className='Icons' href="#" data-classe='Roublard'/>
+            <a className='Icons' href="#" data-classe='Sadida' onClick={() => TriggerClassChange('Sadida')} /> 
+            <a className='Icons' href="#" data-classe='Sacrieur' onClick={() => TriggerClassChange('Sacrieur')} /> 
+            <a className='Icons' href="#" data-classe='Pandawa' onClick={() => TriggerClassChange('Pandawa')} /> 
+            <a className='Icons' href="#" data-classe='Roublard' onClick={() => TriggerClassChange('Roublard')} /> 
 
-            <a className='Icons' href="#" data-classe='Zobal'/>
-            <a className='Icons' href="#" data-classe='Steamer'/>
-            <a className='Icons' href="#" data-classe='Eliotrope'/>
-            <a className='Icons' href="#" data-classe='Huppermage'/>
+            <a className='Icons' href="#" data-classe='Zobal' onClick={() => TriggerClassChange('Zobal')} /> 
+            <a className='Icons' href="#" data-classe='Steamer' onClick={() => TriggerClassChange('Steamer')} />
+            <a className='Icons' href="#" data-classe='Eliotrope' onClick={() => TriggerClassChange('Eliotrope')} />
+            <a className='Icons' href="#" data-classe='Huppermage' onClick={() => TriggerClassChange('Huppermage')} />
 
-            <a className='Icons' href="#" data-classe='Ouginak'/>
-            <a className='Icons' href="#" data-classe='Forgelance'/>
-            <a className='Icons' href="#" data-classe='Feca' />
+            <a className='Icons' href="#" data-classe='Ouginak' onClick={() => TriggerClassChange('Ouginak')} />
+            <a className='Icons' href="#" data-classe='Forgelance' onClick={() => TriggerClassChange('Forgelance')} />
+            <a className='Icons' href="#" data-classe='Feca' onClick={() => TriggerClassChange('Feca')} />
         </div>
 
     </div>
