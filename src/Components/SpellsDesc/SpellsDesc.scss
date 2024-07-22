@@ -1,0 +1,51 @@
+#SpellsDesc{
+    position: absolute;
+    width: 100%;
+    bottom: 110%;
+    left: 0;
+
+    opacity: 0;
+    max-height: 2000px;
+    min-height: fit-content;
+    border-radius: 5px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.87);
+    transition: all .2s ease;
+    &.active{
+        opacity: 1;
+    }
+    .spellWrap{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 10px;
+    }
+    .title{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.3rem;;
+    }
+    .grey{
+        color: rgb(153, 152, 152);
+        margin-right: 5px;
+    }
+    .cost, .range{
+        color: #fff;
+    }
+    .desc{
+        color: rgb(199, 129, 0);
+    }
+    .effectTitle{
+        color: #fff;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    #effects{
+        color: green;
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+}

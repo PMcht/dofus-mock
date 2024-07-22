@@ -1,4 +1,5 @@
 #RightContainer{
+    position: relative;
     min-height: 20vh;
     height: auto;
     width: 20vw;
@@ -29,6 +30,7 @@
         }
         .spellIcon{
             width: 28px;
+            cursor: pointer;
         }
     }
 
