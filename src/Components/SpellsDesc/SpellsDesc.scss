@@ -1,11 +1,11 @@
 #SpellsDesc{
     position: absolute;
-    width: 100%;
+    width: fit-content;
+    max-height: 60vh;
     bottom: 110%;
-    left: 0;
+    right: 0;
 
     opacity: 0;
-    max-height: 2000px;
     min-height: fit-content;
     border-radius: 5px;
     padding: 15px;
@@ -21,11 +21,13 @@
         gap: 25px;
         margin-bottom: 10px;
     }
+    .spellIMG{
+        width: 2.7vw;
+    }
     .title{
         color: #fff;
         font-weight: 600;
-        font-size: 1.2rem;
-        line-height: 1.3rem;;
+        font-size: 1.2vw;
     }
     .grey{
         color: rgb(153, 152, 152);
@@ -33,9 +35,11 @@
     }
     .cost, .range{
         color: #fff;
+        font-size: .7vw
     }
     .desc{
         color: rgb(199, 129, 0);
+        font-size: .8vw
     }
     .effectTitle{
         color: #fff;
@@ -46,6 +50,15 @@
         color: green;
         margin-top: 15px;
         margin-left: 10px;
-
+        font-size: 1vw;
     }
 }
+
+@media (max-height: 800px) {
+    #SpellsDesc{
+        bottom:auto;
+        top: 10%;
+        right: 110%;
+        width: 20vw;
+    }
+  }

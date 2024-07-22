@@ -1,5 +1,6 @@
 #RightContainer{
     position: relative;
+    z-index: 20;
     min-height: 20vh;
     height: auto;
     width: 20vw;
@@ -29,7 +30,8 @@
             flex-direction: column;
         }
         .spellIcon{
-            width: 28px;
+            width: 1.8rem;
+            height: 1.8rem;
             cursor: pointer;
         }
     }

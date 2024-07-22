@@ -1,7 +1,8 @@
 #LeftContainer{
     height: fit-content;
     max-width: 500px;
-    min-width: 300px;
+    width: 30vw;
+    min-width: 20rem;
     background: linear-gradient(-90deg, rgba(0, 75, 70, 0.521) 0%, rgba(0, 0, 0, 0.596) 100%);
     padding: 30px 20px 40px;
     position: relative;
@@ -9,24 +10,22 @@
     flex-direction: column;
     .topDescription{
         display: flex;
-        align-items: flex-end;
-        margin-top: -60px;
-        margin-left: -60px;
+        align-items: center;
         .classLogo{
-            height: 12rem;
-            
+            height: 11vw;
+            margin-left: -4vw;
+            margin-top: -5vw;
         }
         .titles{
-            margin-bottom: 30px;
             margin-left: 10px;
             h1{
                 color: #fff;
-                font-size: 3rem;
-                line-height: 3rem;;
+                font-size: 2.2vw;
+                line-height: 2.2vw;
             }
             h2{
                 color: #ffcb30;
-                font-size: 1.2rem;
+                font-size: 1.2vw;
             }
             .difficulty{
                 display: flex;
@@ -34,10 +33,12 @@
                 p {
                     color: grey;
                     margin-right: 1rem;
+                    font-size: 1vw;
+                    line-height: 1vw;
                 }
                 .star{
-                    font-size: 2rem;
-                    line-height: 2rem;
+                    font-size: 1.6vw;
+                    line-height: 2vw;
                     margin-top: -2px;
                     margin-right: 5px;
                     &.active{
@@ -52,20 +53,19 @@
 
     .description{
         color: #e0e0e0;
-        font-size: .9rem;
+        font-size: .8vw;
         margin-top: 5px;
-        margin-bottom: 14px;
+        padding: 0 1vw;
     }
 
     .bar{
-        margin: 0 auto;
+        margin: 14px auto;
         height: 1px;
         width: 70%;
         background: rgba(128, 128, 128, 0.212);
     }
 
     .caracteristiques{
-        margin-top: 15px;
         position: relative;
         display: flex;  
         flex-direction: column;
@@ -79,20 +79,21 @@
             .caracLogo{
                 background: url('/Caracteristiques.png') no-repeat;
                 background-size: 63px auto;
-                width: 110px;
-                height: 63px;
+                width: 5rem;
+                height: 4rem;
+                margin-right: 1rem;
             }
             .caracText{
                 width: 100%;
             }
             .caracName{
                 color: #e0e0e0;
-                font-size: 1.5rem;
+                font-size: 1.3vw;
                 font-weight: bold;
             }
             .caracDesc{
                 color: #a3a3a3;
-                font-size: .9rem;
+                font-size: .8vw;
             }
         }
     }
@@ -104,5 +105,14 @@
         height: fit-content;
         max-width: 600px;
         min-width: 300px;
+    }
+  }
+
+  @media (max-height: 650px) and (min-width: 500px) {
+    .description{
+        display: none;
+    }
+    .bar.toHide{
+        display: none;
     }
   }

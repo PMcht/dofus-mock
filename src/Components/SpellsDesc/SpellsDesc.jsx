@@ -14,7 +14,7 @@ const SpellsDesc = ({classe, spellNB}) => {
   return (
     <div id="SpellsDesc">
         <div className='spellWrap'>
-            <img className='spellIcon' src={`/Classes/${classe}/Spells/${classe}${spellNB}.png`} />
+            <img className='spellIMG' src={`/Classes/${classe}/Spells/${classe}${spellNB}.png`} />
            <div>
                 <p className='title'>{SpellsData[classe][spellNB]['title']}</p>
                 <p className='cost'><span className='grey'>Coût:</span> {SpellsData[classe][spellNB]['PA']}</p>

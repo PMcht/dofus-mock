@@ -42,6 +42,8 @@ const LeftContainer = ({classe}) => {
 
         </div>
 
+        <div className='bar toHide' />
+
         <p className='description'>
           {classData[classe][0]['Description']}
         </p>

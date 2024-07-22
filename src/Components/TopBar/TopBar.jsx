@@ -24,7 +24,7 @@ const TopBar = () => {
             </div>
 
             <div className='BarSection'>
-                <p>PaulM#dev</p>
+                <p>Crédits: <a href='https://www.dofus.com/fr' target='_blank' >Dofus & Ankama</a></p>
             </div>
 
         </div>
