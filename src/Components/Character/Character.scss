@@ -43,8 +43,22 @@
     }
   }
 
-  @media (max-width:1240px) {
-    .CharacterWrapper{
-      width: 25vw;
+@media (max-width:1240px) {
+  .CharacterWrapper{
+    width: 25vw;
+  }
+}
+
+@media (max-width:600px) {
+  .CharacterWrapper{
+    width: 50vw;
+    align-self: flex-start;
+    margin-top: 50vh;
+    margin-bottom: 0vh;
+    .Arrows{
+      font-size: 5vh;
+      line-height: 3vw;
+      top: 45%
     }
+  }
 }

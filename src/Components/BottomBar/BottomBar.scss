@@ -112,3 +112,16 @@
         }
     }
   }
+
+  @media (max-width: 600px) {
+    #BottomBar{
+        position: relative;
+        height: fit-content;
+        background: transparent;
+      #barContainer{
+            transform: scale(1) translateY(0);
+            background: transparent;
+            flex-wrap: wrap;
+        }
+    }
+  }

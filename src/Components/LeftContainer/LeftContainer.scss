@@ -12,7 +12,7 @@
         display: flex;
         align-items: center;
         .classLogo{
-            height: 11vw;
+            height: 21vh;
             margin-left: -4vw;
             margin-top: -5vw;
         }
@@ -20,7 +20,7 @@
             margin-left: 10px;
             h1{
                 color: #fff;
-                font-size: 2.2vw;
+                font-size: 5.2vh;
                 line-height: 2.2vw;
             }
             h2{
@@ -33,11 +33,11 @@
                 p {
                     color: grey;
                     margin-right: 1rem;
-                    font-size: 1vw;
+                    font-size: 2vh;
                     line-height: 1vw;
                 }
                 .star{
-                    font-size: 1.6vw;
+                    font-size: 3.6vh;
                     line-height: 2vw;
                     margin-top: -2px;
                     margin-right: 5px;
@@ -53,7 +53,7 @@
 
     .description{
         color: #e0e0e0;
-        font-size: .8vw;
+        font-size: 1.7vh;
         margin-top: 5px;
         padding: 0 1vw;
     }
@@ -79,8 +79,8 @@
             .caracLogo{
                 background: url('/Caracteristiques.png') no-repeat;
                 background-size: 63px auto;
-                width: 5rem;
-                height: 4rem;
+                aspect-ratio: 4/5;
+                width: 7vh;
                 margin-right: 1rem;
             }
             .caracText{
@@ -88,13 +88,14 @@
             }
             .caracName{
                 color: #e0e0e0;
-                font-size: 1.3vw;
+                font-size: 2.6vh;
                 font-weight: bold;
             }
             .caracDesc{
                 color: #a3a3a3;
-                font-size: .8vw;
+                font-size: 1.6vh;
             }
+            
         }
     }
 
@@ -114,5 +115,61 @@
     }
     .bar.toHide{
         display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #LeftContainer{
+        max-width: unset;
+        min-width: unset;
+        width: 100%;
+        background: none;
+        padding: 0px 20px 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .topDescription{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .classLogo{
+                height: 21vh;
+                margin-left: 0vw;
+                margin-top: 0vw;
+            }
+            .titles{
+                margin-left: 0px;
+                h1{
+                    margin-top: 1vh;
+                    font-size: 5.2vh;
+                    line-height: 5.2vh;
+                    text-align: center;
+                }
+                h2{
+                    font-size: 4vh;
+                    text-align: center;
+                }
+                .difficulty{
+                    height: 50px;
+                    width: 100%;
+                    justify-content: center;
+                    margin: 0 auto;
+                    p {
+                        margin-right: 1rem;
+                        font-size: 3vh;
+                        line-height: 3vh;
+                    }
+                    .star{
+                        font-size: 3.6vh;
+                        line-height: 3.6vh;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            
+        }
+        .bar{
+            margin: 3vh auto;
+        }
     }
   }

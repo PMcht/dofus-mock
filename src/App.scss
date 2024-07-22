@@ -25,3 +25,36 @@
   }
 }
 
+@media (max-width: 600px) {
+  #mainWrapper{
+    flex-direction: column;
+    height: auto;
+    background-size: 500%;
+    background-position: 65% 0%;
+    background-color: #01414a;
+    gap: 0px;
+    #choose{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position:absolute;
+      top: 0;
+      .logoDofus{
+        min-width: 65vw;
+      }
+    }
+
+  }
+  #LeftContainer{
+    order: 3
+  }
+  #Character{
+    order: 1
+  }
+  #RightContainer{
+    order: 4;
+  }
+}
+
+

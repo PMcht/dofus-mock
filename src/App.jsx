@@ -42,8 +42,9 @@ function App() {
         <TopBar />
 
         <div id="choose">
-        <h1 >Choisissez une classe de personnage</h1>
+            <h1 className='hideOnMobile' >Choisissez une classe de personnage</h1>
 
+            <img className='logoDofus showOnMobile' src={`/dofusLogo.png`} />
         </div>
 
         <LeftContainer classe={classe} />

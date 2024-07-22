@@ -12,3 +12,15 @@ html{
     font-family: "Poppins", sans-serif;
     overflow: hidden;
 }
+
+.hideOnMobile{display: block;}
+.showOnMobile{display:none}
+
+@media (max-width: 600px) {
+    html{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .hideOnMobile{display: none;}
+    .showOnMobile{display:block}
+  }
