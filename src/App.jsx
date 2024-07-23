@@ -6,6 +6,7 @@ import LeftContainer from './Components/LeftContainer/LeftContainer'
 import TopBar from './Components/TopBar/TopBar'
 import { useState } from 'react'
 import TransitionElement from './Components/TransitionElement/TransitionElement'
+import { classData } from '../json/classData'
 
 function App() {
 
@@ -17,7 +18,10 @@ function App() {
   //Handle animation when class changes
   function TriggerClassChange(className) {
 
+    //Background selection
     setNumber(Math.floor(Math.random() * 4) +1)
+
+    //Transition trigger
     const transitionBG = document.getElementById('transitionElement');
     transitionBG.classList.add('active')
 
@@ -35,7 +39,7 @@ function App() {
   }
 
   return (
-    <section id="mainWrapper" style={{backgroundImage: `url(./Classes/${classe}/1.jpg)`}}>
+    <section id="mainWrapper" style={{backgroundImage: `url(./Classes/${classe}/1.jpg)`, backgroundColor:`${classData[classe][0]['color']}`}}>
 
         <TransitionElement number={number} />
 

@@ -87,6 +87,8 @@ const LeftContainer = ({classe}) => {
 
         </div>
 
+        <div className='bar showOnMobile' />
+
         
     </div>
   )

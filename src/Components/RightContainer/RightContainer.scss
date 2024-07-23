@@ -1,6 +1,6 @@
 #RightContainer{
     position: relative;
-    z-index: 20;
+    z-index: 10;
     min-height: 20vh;
     height: auto;
     width: 20vw;
@@ -41,7 +41,8 @@
 @media (max-width: 600px) {
     #RightContainer{
         width: 100vw;
-        margin-top: 10vh;
+        margin-top: 0vh;
+        margin-bottom: 0;
         background: transparent;
         display: flex;
         justify-content: center;

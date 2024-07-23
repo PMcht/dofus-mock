@@ -5,6 +5,7 @@ export const classData = {
             Title: 'Expert en explosif',
             Description: 'Membres d’un clan créé à l’origine par Raval et la famille Smisse, les Roublards ont finalement prêté allégeance au dieu Dralbour, qui n’est autre que Sram. Maîtres de l’entourloupe, du coup fourré, des bombes à retardement et des pistolets… les Roublards ne sont à l’aise qu’en terrain miné.',
             Difficulty : 3,
+            color: '#124349',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",
@@ -31,6 +32,7 @@ export const classData = {
             Title: 'Combattant imprévisible',
             Description: 'Les Ecaflips sont des guerriers joueurs qui se fourrent dans les endroits où l\'on peut gagner gros, et perdre beaucoup… Un Ecaflip bien dans sa peau parie sans arrêt, pour tout et pour rien. Mais attention, il prend le jeu très au sérieux et ira même jusqu\'à risquer sa vie sur un jet de dés pour tenter de remporter la mise…',
             Difficulty : 2,
+            color: '#008783',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",
@@ -57,6 +59,7 @@ export const classData = {
             Title: 'Guérisseur',
             Description: 'Les Eniripsas sont des guérisseurs qui soignent d\'un simple Mot. Ils utilisent le pouvoir de la parole pour soulager les souffrances de leurs alliés, mais parfois aussi pour blesser leurs ennemis. Certains Eniripsas sont même devenus de véritables arpenteurs du verbe, des rôdeurs des langues oubliées.',
             Difficulty : 1,
+            color: '#992b2c',
             Types: [
                 {
                     Name: "Soins",
@@ -83,6 +86,7 @@ export const classData = {
             Title: 'Guerrier téméraire',
             Description: 'Les Iops sont des guerriers fonceurs et sans reproche ! Une chose est sûre : les Iops savent faire parler les armes. D\'ailleurs, se retrouver pris dans une bagarre au moins une fois par jour est pour eux un signe de bonne santé. Leur tempérament impétueux fait des Iops des paladins de l\'extrême, capables du meilleur... comme du pire !',
             Difficulty : 1,
+            color: '#c14100',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",
@@ -109,6 +113,7 @@ export const classData = {
             Title: 'Archer',
             Description: 'Les Crâs sont des archers aussi fiers que précis ! Ils font des alliés précieux contre les adeptes de la mêlée franche. Restant à distance, décochant leurs traits empennés dans le moindre orifice laissé sans surveillance, ils ne laissent aucun répit à leurs adversaires !',
             Difficulty : 1,
+            color: '#41740b',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",
@@ -135,6 +140,7 @@ export const classData = {
             Title: 'Protecteur',
             Description: 'Les Fécas sont de loyaux protecteurs toujours sur la défensive. Ils sont appréciés dans les groupes d\'aventuriers pour leurs armures élémentaires et leur capacité à encaisser les coups durs. Ils sont également maîtres dans l’art des signes magiques : quand il va y avoir du grabuge, les Fécas sortent leurs glyphes !',
             Difficulty : 1,
+            color: '#f88800',
             Types: [
                 {
                     Name: "Protection",
@@ -161,6 +167,7 @@ export const classData = {
             Title: 'Berserker',
             Description: 'Les Sacrieurs sont des berserkers qui décuplent leurs forces dès qu\'ils sont frappés ! N\'ayant pas peur de recevoir des coups, ni de s\'exposer aux blessures, ils seront souvent en première ligne, prêts à verser le premier sang ! Le Sacrieur est vraiment le compagnon idéal pour vos longues soirées guerrières…',
             Difficulty : 1,
+            color: '#263e0a',
             Types: [
                 {
                     Name: "Tank",
@@ -187,6 +194,7 @@ export const classData = {
             Title: 'Sorcier sylvestre',
             Description: 'Les Sadidas sont des invocateurs qui empoisonnent la vie de leurs ennemis ! Apprivoiser les Ronces pour en faire des armes terrifiantes, confectionner des poupées de guerre et de soins, voilà qui satisfait tout disciple Sadida digne de ce nom.',
             Difficulty : 2,
+            color: '#263e0a',
             Types: [
                 {
                     Name: "Invocation",
@@ -213,6 +221,7 @@ export const classData = {
             Title: 'Invocateur de créatures',
             Description: 'Les Osamodas sont des dompteurs nés ! Ils ont le pouvoir d\'invoquer des créatures et sont de remarquables dresseurs. Une rumeur prétend qu\'ils taillent leurs vêtements dans la peau de leurs ennemis, mais allez donc leur demander ce qu\'il en est… Si vous êtes de son côté, un Osamodas sera aux petits soins pour vous. Dans le cas contraire, peut-être terminerez-vous votre vie sous la forme d\'une botte ou d\'un bonnet fourré.',
             Difficulty : 2,
+            color: '#004d45',
             Types: [
                 {
                     Name: "Invocation",
@@ -239,6 +248,7 @@ export const classData = {
             Title: 'Chasseur de trésors',
             Description: 'Les Enutrofs sont des chasseurs de trésor avides de kamas, qui malgré leur grand âge courent comme des dragodindes à la vue d\'un coffre bien rempli. Ils sont experts dans l’art de ralentir leurs ennemis : ils peuvent ainsi les harceler avant de les assommer à grands coups de pelle le moment venu !',
             Difficulty : 1,
+            color: '#d16701',
             Types: [
                 {
                     Name: "Entrave",
@@ -265,6 +275,7 @@ export const classData = {
             Title: 'Assassin',
             Description: 'Les Srams sont des assassins qui aiment les bourses, rebondies de préférence. Trousser les pans d\'une tunique, tâter le fond d\'une poche, faire preuve de doigté, palper enfin des bijoux tant convoités avant de poser un piège ou d\'asséner un coup mortel, voilà la vie d\'un disciple de Sram !',
             Difficulty : 2,
+            color: '#36007b',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",
@@ -291,6 +302,7 @@ export const classData = {
             Title: 'Maître du temps',
             Description: 'Les Xélors sont des mages qui maîtrisent le temps et toutes les mécaniques qui donnent l\'heure : carillons, horloges, et pendules leur obéissent au doigt et à l\'œil. Les Xélors jouent donc avec le temps pour ralentir un ennemi ou se téléporter où bon leur semble.',
             Difficulty : 3,
+            color: '#000982',
             Types: [
                 {
                     Name: "Placement",
@@ -318,6 +330,7 @@ export const classData = {
             Title: 'Bagarreur assoifé',
             Description: 'Les Pandawas sont des guerriers adeptes des arts martiaux qui savent faire des folies de leurs corps ! Ils peuvent même en faire avec le corps des autres… Le Pandawa sait comment soulever les foules, il porte ses alliés sur ses épaules pour mieux les protéger. Quant à ses ennemis, il les enverra valser dans le décor, avant de fêter sa victoire avec une bonne rasade de lait de bambou !',
             Difficulty : 2,
+            color: '#65040d',
             Types: [
                 {
                     Name: "Placement",
@@ -345,6 +358,7 @@ export const classData = {
             Title: 'Guerrier lunatique',
             Description: 'Les Zobals portent des masques magiques qui leur permettent de changer de tête comme de chemise. Tour à tour collants comme de la glu, enragés comme des psychopathes ou partisans de la retraite stratégique, ils s’adaptent à la situation, mais gare aux troubles de la personnalité ! La légende dit que ces êtres imprévisibles seraient bénis par Sadida lui-même.',
             Difficulty : 1,
+            color: '#880002',
             Types: [
                 {
                     Name: "Tank",
@@ -372,6 +386,7 @@ export const classData = {
             Title: 'Technomage',
             Description: 'Les Steamers ont plus d’une tourelle dans leur boîte à outils. En fins tacticiens, ils utilisent la technomagie pour prendre l’avantage sur le terrain. Ces marinventeurs aux scaphandres rutilants vouent un culte au Grand Oktapodas, le protecteur des océans.',
             Difficulty : 3,
+            color: '#504d2f',
             Types: [
                 {
                     Name: "Soins",
@@ -399,6 +414,7 @@ export const classData = {
             Title: 'Créateur de portails',
             Description: 'Apparus par accident, les Eliotropes sont des reflets de leur créateur, le Roi-Dieu. Ils se déplacent à la vitesse de l\'éclair, disparaissant en un clin d\'œil pour réapparaître plus loin. Tout comme les Eliatropes, ils connaissent les secrets du Wakfu.',
             Difficulty : 3,
+            color: '#0d1e29',
             Types: [
                 {
                     Name: "Placement",
@@ -425,6 +441,7 @@ export const classData = {
             Title: 'Mage élémentaliste',
             Description: 'Les Huppermages sont capables de combiner le Feu, l’Air, l’Eau et la Terre pour lancer des sortilèges aux multiples effets. Maîtres des runes élémentaires, ils vénèrent la Balance Krosmique, une force mystérieuse qui tend à maintenir l’équilibre dans l\'univers.',
             Difficulty : 2,
+            color: '#2b1d12',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",
@@ -451,6 +468,7 @@ export const classData = {
             Title: 'Barbare',
             Description: 'Quand on est un barbare avec un caractère de chienchien, il faut savoir montrer les crocs pour se faire respecter. Le regard fier, le poil brillant, la truffe humide : c\'est ainsi que l\'Ouginak traverse les épreuves et triomphe de l\'adversité. Traquer ses proies sans relâche, laisser éclater sa rage pour écraser ses ennemis et les voir mourir devant soi.',
             Difficulty : 1,
+            color: '#301e01',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",
@@ -477,6 +495,7 @@ export const classData = {
             Title: 'Champion immortel',
             Description: 'Les Forgelances sont des lanciers qui ne croient qu\'en eux-mêmes ! Tirant leurs pouvoirs de la Lance Originelle, ces combattants cherchent à se forger une renommée que la mort elle-même ne saurait effacer. Le Forgelance se laissera convaincre de brandir son arme à vos côtés par des promesses de gloire et de postérité.',
             Difficulty : 2,
+            color: '#3c280f',
             Types: [
                 {
                     Name: "D\u00e9g\u00e2ts",

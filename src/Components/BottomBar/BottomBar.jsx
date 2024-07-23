@@ -17,13 +17,15 @@ const BottomBar = ( {TriggerClassChange, setGender, gender} ) => {
   }, [gender])
   
   return (
-    <div id="BottomBar">
+    <div id="BottomBar" className='active'>
+
+      <h2 className='showOnMobile'>Choisissez une classe</h2>
 
         <div id="barContainer">
 
             <div id="GenderSelect">
-                <a href='#' className='Gender M' onClick={() => setGender('M')}><Male /></a>
-                <a href='#' className='Gender F' onClick={() => setGender('F')}><Female /></a>
+                <a className='Gender M' onClick={() => setGender('M')}><Male /></a>
+                <a className='Gender F' onClick={() => setGender('F')}><Female /></a>
             </div>
 
             <a className='Icons' href="#" data-classe='Osamodas' onClick={() => TriggerClassChange('Osamodas')} />

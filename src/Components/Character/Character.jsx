@@ -18,11 +18,11 @@ const Character = ({classe, gender}) => {
   return (
     <div className='CharacterWrapper'>
 
-        <a href="#" className='Arrows' onClick={() => changePos(+1)}>↶</a>
+        <a className='Arrows' onClick={() => changePos(+1)}>↶</a>
 
         < img src={`./Classes/${classe}/Character/${gender + pos}.png`} className='Character' />
 
-        <a href="#" className='Arrows' onClick={() => changePos(-1)}>↷</a>
+        <a className='Arrows' onClick={() => changePos(-1)}>↷</a>
 
     </div>
   )

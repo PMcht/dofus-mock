@@ -66,11 +66,13 @@
   @media (max-width: 600px) {
     #SpellsDesc{
         position:relative;
+        right: unset;
         margin-top: 5vh;
-        width: 100%;
+        width: 90%;
+        padding: 2vh 3vh;
+        height: fit-content;
         max-height: unset;  
         opacity: 1;
-        min-height: fit-content;
         background: rgba(0, 0, 0, 0.315);
     }
   }

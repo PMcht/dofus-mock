@@ -31,7 +31,6 @@
     height: auto;
     background-size: 500%;
     background-position: 65% 0%;
-    background-color: #01414a;
     gap: 0px;
     #choose{
       display: flex;
@@ -45,16 +44,19 @@
       }
     }
 
-  }
-  #LeftContainer{
-    order: 3
-  }
-  #Character{
-    order: 1
-  }
-  #RightContainer{
-    order: 4;
-  }
+    }
+    #LeftContainer{
+      order: 3
+    }
+    #Character{
+      order: 1
+    }
+    #RightContainer{
+      order: 4;
+    }
+    #BottomBar{
+      order: 5
+    }
 }
 
 
