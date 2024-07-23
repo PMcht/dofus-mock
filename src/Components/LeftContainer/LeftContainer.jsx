@@ -54,7 +54,7 @@ const LeftContainer = ({classe}) => {
 
             <div className='carac'>
 
-                  <div className='caracLogo' style={{backgroundPosition: `center ${classData[classe][0]['Types'][0]['bgPos']}`}} />
+                  <img className='caracLogo' src={`/Various/${classData[classe][0]['Types'][0]['Name']}.png`} />
 
                   <div className='caracText'>
                       <p className='caracName'>{classData[classe][0]['Types'][0]['Name']}</p>
@@ -65,7 +65,7 @@ const LeftContainer = ({classe}) => {
 
             <div className='carac'>
 
-                  <div className='caracLogo' style={{backgroundPosition: `center ${classData[classe][0]['Types'][1]['bgPos']}`}} />
+            <img className='caracLogo' src={`/Various/${classData[classe][0]['Types'][1]['Name']}.png`} />
 
                   <div className='caracText'>
                       <p className='caracName'>{classData[classe][0]['Types'][1]['Name']}</p>
@@ -76,7 +76,7 @@ const LeftContainer = ({classe}) => {
 
             <div className='carac'>
 
-              <div className='caracLogo' style={{backgroundPosition: `center ${classData[classe][0]['Types'][2]['bgPos']}`}} />
+            <img className='caracLogo' src={`/Various/${classData[classe][0]['Types'][2]['Name']}.png`} />
 
               <div className='caracText'>
                   <p className='caracName'>{classData[classe][0]['Types'][2]['Name']}</p>
