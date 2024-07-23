@@ -31,8 +31,8 @@ const RightContainer = ({classe}) => {
 
       {Array.from({ length: 22 }, (_, i) => 
             <div className='spellContainer' key={i}>
-              <img className='spellIcon' data-spellnb={((i+1)*2)-1} src={`/Classes/${classe}/Spells/${classe}${((i+1)*2)-1}.png`} onClick={() => spellNumber(((i+1)*2)-1)} />
-              <img className='spellIcon' data-spellnb={((i+1)*2)} src={`/Classes/${classe}/Spells/${classe}${((i+1)*2)}.png`} onClick={() => spellNumber((i+1)*2)}  />
+              <img className='spellIcon' data-spellnb={((i+1)*2)-1} src={`./Classes/${classe}/Spells/${classe}${((i+1)*2)-1}.png`} onClick={() => spellNumber(((i+1)*2)-1)} />
+              <img className='spellIcon' data-spellnb={((i+1)*2)} src={`./Classes/${classe}/Spells/${classe}${((i+1)*2)}.png`} onClick={() => spellNumber((i+1)*2)}  />
           </div>
         )}
 
